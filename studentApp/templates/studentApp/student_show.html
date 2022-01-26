@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Students</title>
+</head>
+<body>
+<h1>The Students in the Platform</h1>
+<div>
+    <ul>
+        {% for stud in student %}
+        <li>
+            <h2>Fullname: {{ stud.firstName }} {{ stud.lastName }}</h2>
+            <p> Grade: {{ stud.studentGrade }}</p>
+            <p> Email: {{ stud.studentEmail }}</p>
+            <p> Age: {{ stud.studentAge }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+</body>
+</html>
